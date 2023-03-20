@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Generator</title>
+</head>
+<body>
+    
+    <h1>Random Name Generator</h1>
+    <br>
+    <br>
+    <input
+    type="text"
+    name="inputName"
+    id="inputName"
+    placeholder="wright a name"
+    >
+    <button onclick="inputName()">Input Name</button>
+    <br>
+    <input
+    type="text"
+    name="inputName"
+    id="deletOneName"
+    placeholder="wright a name"
+    >
+    <button onclick="deletOneName()">Delet One Name</button>
+    <hr>
+    <p id="nameList"></p>
+    <p id="name"></p>
+    <button onclick="generateName()">Generate Name</button>
+    <button onclick="clearBtn()">clear</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="masterDelteBtn()">Name List Delet</button>
+    <script src="script.js"></script>
+</body>
+</html>
