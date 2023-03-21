@@ -9,6 +9,7 @@ function inputName()
     document.getElementById("nameList").textContent = firstNames;
     const jsonInputName = JSON.stringify(firstNames)
     localStorage.setItem('localNames',jsonInputName);
+    document.querySelector('#inputName').value=('');
    
 }
 //generiert ein Randomnamen aus der Namens liste firstNames und schneidet diesen aus der neu generierte Array wird gespeichter im loSt als remainingNames
@@ -45,6 +46,7 @@ function deletOneName()
         localStorage.setItem('localNames',jsonInputName);
         localStorage.setItem('remainingNames',jsonInputName);
         document.getElementById("nameList").textContent = firstNames;
+        document.querySelector('#deletOneName').value=('');
        
     }
     else
