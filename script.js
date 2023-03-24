@@ -62,6 +62,7 @@ function masterDelteBtn()
     localStorage.removeItem('localNames');
     document.getElementById("nameList").textContent = null;
     document.getElementById("name").textContent = null;
+    firstNames= [];
 }
 
 
