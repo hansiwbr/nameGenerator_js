@@ -16,6 +16,7 @@
         id="inputName"
         placeholder="write a name"
         pattern="[A-zÄÖÜäöüß,. ]*"
+        onkeydown="if (event.keyCode === 13){inputName();}"
         >
         <button role="button" class="inputName" onclick="inputName()">Input Name</button>
         
@@ -25,6 +26,7 @@
         id="deletOneName"
         placeholder="write a name"
         pattern="[A-zÄÖÜäöüß,. ]*"
+        onkeydown="if (event.keyCode === 13){deletOneName();}"
         >
         <button role="button" class="inputName" onclick="deletOneName()">Delete One Name</button>
         <div class="p_container">
